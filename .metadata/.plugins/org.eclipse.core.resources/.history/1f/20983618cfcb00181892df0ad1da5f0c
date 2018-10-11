@@ -1,0 +1,26 @@
+package demo.controller;
+
+
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
+
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/user")
+public class UserControllerConsume {
+	
+	@RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+	public String handlerJson(@RequestBody String s) {
+		System.out.println(s);
+		return "index";
+	}
+	
+	@RequestMapping(consumes = MediaType.APPLICATION_XML_VALUE)
+	public String handlerXml(@RequestBody String s) {
+		System.out.println(s);
+		return "index";
+	}
+}

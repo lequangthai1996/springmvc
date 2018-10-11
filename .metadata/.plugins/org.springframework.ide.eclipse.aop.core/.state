@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="hibernate1"/>
+<aop-project name="hibernate2"/>
+<aop-project name="hibernate3"/>
+<aop-project name="springcore"/>
+</aop-reference-model>

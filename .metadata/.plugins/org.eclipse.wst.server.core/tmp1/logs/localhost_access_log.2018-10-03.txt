@@ -1,0 +1,9 @@
+127.0.0.1 - - [03/Oct/2018:00:30:33 +0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:00:30:35 +0700] "GET /SpringMVC01/ HTTP/1.1" 404 967
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:00:30:37 +0700] "GET /favicon.ico HTTP/1.1" 404 1005
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:00:31:07 +0700] "GET /SpringMVC01/index HTTP/1.1" 404 1035
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:00:31:49 +0700] "GET /SpringMVC01/springDispatcherServlet HTTP/1.1" 404 967
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:00:31:53 +0700] "GET /SpringMVC01/springDispatcherServlet/index HTTP/1.1" 404 967
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:00:31:59 +0700] "GET /springDispatcherServlet/index HTTP/1.1" 404 1027
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:00:33:37 +0700] "GET /SpringMVC01/ HTTP/1.1" 404 967
+0:0:0:0:0:0:0:1 - - [03/Oct/2018:00:33:42 +0700] "GET /SpringMVC01/index HTTP/1.1" 200 173

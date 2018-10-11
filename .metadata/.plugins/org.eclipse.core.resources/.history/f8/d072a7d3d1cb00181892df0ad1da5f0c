@@ -1,0 +1,14 @@
+package demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/header")
+@Controller
+public class UserControllerHeader {
+	
+	@RequestMapping(headers = "id=4")
+	public String header() {
+		
+	}
+}

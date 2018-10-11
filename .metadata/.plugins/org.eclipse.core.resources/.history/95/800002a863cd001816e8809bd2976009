@@ -1,0 +1,29 @@
+package demo.controller;
+
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import demo.domain.Person;
+
+@Controller
+@RequestMapping("/produces")
+public class UserProduces {
+	
+	@ResponseBody
+	@RequestMapping(value = "/json", method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
+	public Person handlerJson(@RequestBody String s) {
+		Person p = new Person("thai", Integer.valueOf(22), "Quang nam");
+		return p;
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/xml", produces =  MediaType.APPLICATION_XML_VALUE )
+	public Person handlerXML() {
+		Person p = new Person("nam", Integer.valueOf(30), "Quang binh");
+		return p;
+	}
+}

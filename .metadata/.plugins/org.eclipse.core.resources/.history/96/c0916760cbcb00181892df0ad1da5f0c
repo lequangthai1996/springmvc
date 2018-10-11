@@ -1,0 +1,16 @@
+package demo.controller;
+
+
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/user")
+public class UserControllerConsume {
+	
+	@RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+	public String acceptJson() {
+		
+	}
+}
